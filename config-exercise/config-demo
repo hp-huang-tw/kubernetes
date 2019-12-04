@@ -1,21 +1,31 @@
 apiVersion: v1
-kind: Config
-preferences: {}
-
 clusters:
 - cluster:
+    certificate-authority: fake-ca-file
+    server: https://1.2.3.4
   name: development
 - cluster:
+    insecure-skip-tls-verify: true
+    server: https://5.6.7.8
   name: scratch
-
-users:
-- name: developer
-- name: experimenter
-
 contexts:
 - context:
+    cluster: ""
+    user: ""
   name: dev-frontend
 - context:
+    cluster: ""
+    user: ""
   name: dev-storage
 - context:
+    cluster: ""
+    user: ""
   name: exp-scratch
+current-context: ""
+kind: Config
+preferences: {}
+users:
+- name: developer
+  user: {}
+- name: experimenter
+  user: {}
