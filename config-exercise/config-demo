@@ -26,6 +26,10 @@ kind: Config
 preferences: {}
 users:
 - name: developer
-  user: {}
+  user:
+    client-certificate: fake-cert-file
+    client-key: fake-key-seefile
 - name: experimenter
-  user: {}
+  user:
+    password: some-password
+    username: exp
