@@ -10,16 +10,19 @@ clusters:
   name: scratch
 contexts:
 - context:
-    cluster: ""
-    user: ""
+    cluster: development
+    namespace: frontend
+    user: developer
   name: dev-frontend
 - context:
-    cluster: ""
-    user: ""
+    cluster: development
+    namespace: storage
+    user: developer
   name: dev-storage
 - context:
-    cluster: ""
-    user: ""
+    cluster: scratch
+    namespace: default
+    user: experimenter
   name: exp-scratch
 current-context: ""
 kind: Config
