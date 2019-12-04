@@ -24,7 +24,7 @@ contexts:
     namespace: default
     user: experimenter
   name: exp-scratch
-current-context: ""
+current-context: dev-frontend
 kind: Config
 preferences: {}
 users:
